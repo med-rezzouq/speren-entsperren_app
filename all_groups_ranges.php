@@ -8,6 +8,8 @@ if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
 }
 
+///
+
 // Perform the select operation for 'groups' table to export all items
 $queryAllGroups = "SELECT * FROM `groups`";
 
@@ -46,4 +48,3 @@ if ($resultAllGroups && $resultAllRanges) {
 } else {
     echo "Error: " . $mysqli->error;
 }
-?>
